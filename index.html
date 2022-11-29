@@ -1,0 +1,96 @@
+
+<html>
+<head>
+    
+        
+  
+  <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+  <!--<script type='text/javascript' src='http://0.0.0.0:8080/scaledrone.js'></script>-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <style>
+
+    body {
+     
+      background-color:#222222;
+      margin: 0;
+      padding: 13px;
+      display: flex;
+      flex-direction: column;
+      max-height: 1000vh;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    .members-count{
+              padding: 15px;
+      margin-bottom: 0px;
+      width:100%;
+      height: 6%;
+      color: white;
+    }
+    .members-list{
+              padding: 15px;
+      margin-bottom: 0px;
+      width:100%;
+      height: 20%;
+    }
+    .messages {
+      
+      padding: 15px;
+      margin-bottom: 0px;
+      width:100%;
+      height: 50%;
+    }
+
+    .messages {
+      flex-shrink: 1;
+      overflow: auto;
+      color: white;
+    }
+
+    .message {
+      padding: 5px 0;
+    }
+    .message .member {
+      display: inline-block;
+    }
+
+    .member {
+      padding-right: 10px;
+      position: relative;
+    }
+
+    .message-form {
+      display: flex;
+      flex-shrink: 0;
+      color: green;
+    }
+    .message-form__input {
+      flex-grow: 1;
+      color: white;
+      background-color:#222222;
+      padding: 10px 15px;
+      font-size: 16px;
+      border:#222222;
+    }
+    .message-form__button {
+      
+      background-color: grey;
+      color: white;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="members-count">-</div>
+  <div class="members-list">-</div>
+  <div class="messages"></div>
+  <form class="message-form" onsubmit="return false;">
+    <input class="message-form__input" placeholder="Type a message.." type="text"/>
+
+  </form>
+  <script src="./script.js"></script>
+
+</body>
+</html>
+
